@@ -4,17 +4,21 @@ shiny_data.RData
 *.rds
 *.csv
 data/
-
+ 
 # ── Archivos de RStudio / R ───────────────────────────────────
 .Rhistory
 .Rproj.user/
 *.Rproj
-
+ 
 # ── Despliegue (rsconnect guarda credenciales/config) ─────────
 rsconnect/
-
+ 
 # ── Credenciales locales ───────────────────────────────────────
 .Renviron
-
+ 
+# ── Caché de Windows Explorer ───────────────────────────────────
+Thumbs.db
+desktop.ini
+ 
 # ── Sistema ────────────────────────────────────────────────────
 .DS_Store
