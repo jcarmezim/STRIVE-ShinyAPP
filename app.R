@@ -11,17 +11,6 @@ library(labelled)
 library(glue)
 library(stringr)
 
-########### Publicar app ############
-# Las credenciales NUNCA deben ir en el código fuente, ni siquiera comentadas.
-# Configura la cuenta UNA VEZ desde la consola de RStudio (no queda guardado
-# en este script), leyendo los valores desde tu .Renviron local (fuera del repo):
-#
-#   rsconnect::setAccountInfo(name   = Sys.getenv("SHINYAPPS_NAME"),
-#                              token  = Sys.getenv("SHINYAPPS_TOKEN"),
-#                              secret = Sys.getenv("SHINYAPPS_SECRET"))
-#   rsconnect::deployApp(appName = "STRIVE")
-#---###---###---###---###---###
-
 # ── Load ──────────────────────────────────────────────────────────────────────
 load("shiny_data.RData", envir = globalenv())
 
