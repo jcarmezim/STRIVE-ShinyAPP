@@ -17,6 +17,7 @@ data/
 .Rhistory
 .Rproj.user/
 *.Rproj
+.vscode/
  
 # ── Despliegue (rsconnect guarda credenciales/config) ─────────
 rsconnect/
