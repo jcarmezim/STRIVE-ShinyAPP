@@ -1,12 +1,17 @@
 # ── Datos de pacientes: NUNCA subir ──────────────────────────
 shiny_data.RData
+shiny_data_real.RData
 publicar_app.R
 prepare_public_data.R
+generate_synthetic_data.R
 *.RData
 *.rds
 *.csv
 data/
-!shiny_data_public.RData
+
+# Excepción: dataset SINTÉTICO -- ningún valor corresponde a un paciente
+# real (ver generate_synthetic_data.R). SÍ se sube al repo público.
+!shiny_data_demo.RData
  
 # ── Archivos de RStudio / R ───────────────────────────────────
 .Rhistory

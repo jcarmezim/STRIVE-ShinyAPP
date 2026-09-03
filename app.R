@@ -12,7 +12,16 @@ library(glue)
 library(stringr)
 
 # ── Load ──────────────────────────────────────────────────────────────────────
-load("shiny_data.RData", envir = globalenv())
+# Prioriza datos reales si existen localmente (despliegue real); si no,
+# usa el dataset sintético (repo público / desarrollo sin datos reales).
+# shiny_data_real.RData NUNCA se sube a git (cubierto por *.RData en
+# .gitignore). shiny_data_demo.RData sí se sube (ver generate_synthetic_data.R).
+data_file <- if (file.exists("shiny_data_real.RData")) {
+  "shiny_data_real.RData"
+} else {
+  "shiny_data_demo.RData"
+}
+load(data_file, envir = globalenv())
 
 # ── Newdata builder for PH model ──────────────────────────────────────────────
 make_newdata_ph <- function(resp_patho_val, age_val, gender_val,
