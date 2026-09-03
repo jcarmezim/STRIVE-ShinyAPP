@@ -1,0 +1,20 @@
+# ── Datos de pacientes: NUNCA subir ──────────────────────────
+shiny_data.RData
+*.RData
+*.rds
+*.csv
+data/
+
+# ── Archivos de RStudio / R ───────────────────────────────────
+.Rhistory
+.Rproj.user/
+*.Rproj
+
+# ── Despliegue (rsconnect guarda credenciales/config) ─────────
+rsconnect/
+
+# ── Credenciales locales ───────────────────────────────────────
+.Renviron
+
+# ── Sistema ────────────────────────────────────────────────────
+.DS_Store
