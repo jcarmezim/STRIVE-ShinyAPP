@@ -1,9 +1,12 @@
 # ── Datos de pacientes: NUNCA subir ──────────────────────────
 shiny_data.RData
+publicar_app.R
+prepare_public_data.R
 *.RData
 *.rds
 *.csv
 data/
+!shiny_data_public.RData
  
 # ── Archivos de RStudio / R ───────────────────────────────────
 .Rhistory
